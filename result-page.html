@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100vh;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/icon" href="https://lh3.googleusercontent.com/fife/AGXqzDkTneiPLT6t-lo9fnxZi6mIFb6ZJPNspr3HcYawK11UIcuwBcZF1cam8-zSpBkmY8JfllG1isKvVbRTVBo5VViA5o4h8b9lh4CFIENc302gWsVGGYsVeBSNnALRn_9ILdPtO2eJx7R1AH3163mcuD445RLbTdaUEgRmK0JZrvirXSW3neHWaz5g6YqrLs2O6pAyCY81x4LaH9jgfAi6G24xWmou2qveRQM6GlaYtb1v6EesWRM7NyaRQx7C5Iu_-_ahjpMPxc_X7ZK6IOHaHQjExaagvsQySCot_Ui3_gTrPSjFqWhaE1e52XYI2BVt4n9B3MOfBMJOcGwNyk4x3b_umD-H2RRk3woGxSMghITePuqUTQsELiXDWw8PVWkSFuiuoSIPy9QB94gOtasAZ720Oh8nWw4Z0PUwmA33UP4YBiD88QePCN3XJ9KAivDNAUykBQTT1OxBWdj8dXcTRnJ6wCJpwqlhg0S8SCaIFP82mhGhf94KlO-1WpC00di18ZZwZtBl6kd4k69rAgCW5zwW7UglzPhnLci3oRIATqzN5RfQ5gXgKmRRKCRTgilq3Wv-zwbYVoxWpwVV7psPLlTpvrd4osne6YI6nR6TW4tDHt3eJXPQobezkzb2HQp061V3_LlYSoE5yp9Fb3mcVDgohcmAjKxpPxO9JcuNyTQ5ukLbskoapnYpOa20LrYedESphe4mNIzYmjeLNQD8EWE_MvX876UR5CfgwzzlFCEZywvGB9wLpwrTMwjSV18A-4KavP2uLeB4ptI50bD8tSpLiLm8oPoH2dRFz0_DRHxAIC-MH-SwGChxJP1fFr7AxXTpLtt9wI4pfBSM63SJ_2Aa1ENX1tEfEumpW8heBd_Bw5NTrWeASdAEmgsXfo6tRh6zo_mRqA0VBfxXBYLZKXkxoOKvSbYVRBFt3DjTpUSKX-_BIeOORFKvaZMH4G-_7yQkdoZCMpMOrZ6tTHinYluurgP5lJqy9fSHs6Ex-6CF-lI79GQq0fX0nbqhP9nZne14CIahduhp61lEcNDmZDPOW00vZ_mq4R1u0-LPjdnhNg=w960-h720">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="result.css">
+    <script src="resultScript.js"></script>
+    <title>songbird</title>
+</head>
+<body onload="run()" style="margin: 0 0 0 0; display: flex; flex-direction: column; height: 100%;">
+    <main class="row">
+        <!-- left column -->
+        <div class="column left">
+            <header>
+                <div class="header-child">
+                <img id="logo" src="https://lh3.googleusercontent.com/fife/AGXqzDkTneiPLT6t-lo9fnxZi6mIFb6ZJPNspr3HcYawK11UIcuwBcZF1cam8-zSpBkmY8JfllG1isKvVbRTVBo5VViA5o4h8b9lh4CFIENc302gWsVGGYsVeBSNnALRn_9ILdPtO2eJx7R1AH3163mcuD445RLbTdaUEgRmK0JZrvirXSW3neHWaz5g6YqrLs2O6pAyCY81x4LaH9jgfAi6G24xWmou2qveRQM6GlaYtb1v6EesWRM7NyaRQx7C5Iu_-_ahjpMPxc_X7ZK6IOHaHQjExaagvsQySCot_Ui3_gTrPSjFqWhaE1e52XYI2BVt4n9B3MOfBMJOcGwNyk4x3b_umD-H2RRk3woGxSMghITePuqUTQsELiXDWw8PVWkSFuiuoSIPy9QB94gOtasAZ720Oh8nWw4Z0PUwmA33UP4YBiD88QePCN3XJ9KAivDNAUykBQTT1OxBWdj8dXcTRnJ6wCJpwqlhg0S8SCaIFP82mhGhf94KlO-1WpC00di18ZZwZtBl6kd4k69rAgCW5zwW7UglzPhnLci3oRIATqzN5RfQ5gXgKmRRKCRTgilq3Wv-zwbYVoxWpwVV7psPLlTpvrd4osne6YI6nR6TW4tDHt3eJXPQobezkzb2HQp061V3_LlYSoE5yp9Fb3mcVDgohcmAjKxpPxO9JcuNyTQ5ukLbskoapnYpOa20LrYedESphe4mNIzYmjeLNQD8EWE_MvX876UR5CfgwzzlFCEZywvGB9wLpwrTMwjSV18A-4KavP2uLeB4ptI50bD8tSpLiLm8oPoH2dRFz0_DRHxAIC-MH-SwGChxJP1fFr7AxXTpLtt9wI4pfBSM63SJ_2Aa1ENX1tEfEumpW8heBd_Bw5NTrWeASdAEmgsXfo6tRh6zo_mRqA0VBfxXBYLZKXkxoOKvSbYVRBFt3DjTpUSKX-_BIeOORFKvaZMH4G-_7yQkdoZCMpMOrZ6tTHinYluurgP5lJqy9fSHs6Ex-6CF-lI79GQq0fX0nbqhP9nZne14CIahduhp61lEcNDmZDPOW00vZ_mq4R1u0-LPjdnhNg=w960-h720">
+                    <div class="header-child">
+                        <p>songbird</p>
+                </div>
+            </header>
+            <img id="left-side" src="https://lh3.googleusercontent.com/u/1/drive-viewer/AEYmBYSvTwcu02NhQl9ZPMsfNcOqyibsFj0wZA_gnxgK6MB1YHPkOyWH57QsfIOOzOKXhhUQy1vuFV12kRQ1-R1UBWPsZOWR7w=w960-h720">
+        </div>
+
+        <!-- middle column -->
+        <div class="column middle">
+            <div class="starting-prompt">
+                <p>&nbsp;songbird delivery...</p>
+            </div>
+                <div class="image-display">
+                    <img id="bubble-bird" src="https://lh3.googleusercontent.com/u/1/drive-viewer/AEYmBYRDsgPnVTV48Y-fjFLi06vOQoF8s1gxXoIhiVT9epQ3Y_q2Gruq-Crq12ZWEpKeJL7Mupfv1wdCrvGrBZNWqlVc8811TQ=w960-h720">
+                    <div class="in-bubble-prompt">your word was:</div>
+                    <div class="in-bubble-output" id="in-bubble-output">"input word"</div> 
+                </div>
+                <div class="song-output">
+                    <img id="white-rectangle" src="https://lh3.googleusercontent.com/u/1/drive-viewer/AEYmBYRw2LvFkkM3i5AIFOgTAV7Quk9Jg7f0OR_3xnFTKkrSVfHkFpGYxVeinR-g4puNCfoBneB_MUrPqgrj0llLuSfXMDoYrQ=w960-h720">
+                    <div class="rectangle-column rectangle-left">
+                        <div class="album-cover-pic">
+                            <img id="album-cover-pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Vinyl_record.svg/2048px-Vinyl_record.svg.png" class="rotate" width="100" height="100">  
+                        </div>
+                    </div>
+
+                    <div class="rectangle-column rectangle-right">
+                        <p class="song-title" id="song-title">"song title"</p>
+                        <p class="artist-name" id="artist-name">"artist name"</p>
+                    </div>
+                </div>
+
+                <div class="again-button-div">
+                    <button class="again-button" type="button" onclick="home()">discover another song</button>
+                </div> 
+        </div>
+
+        <!-- right column -->
+        <div class="column right">
+            <img id="right-side" src="https://lh3.googleusercontent.com/u/1/drive-viewer/AEYmBYT_MVTt9ztnlzMmnMg9Yn3QRJ1KI0Li_E2pRaQEMDbD8ReW6iIgpopIdujQGkcghWB3g1HpplnKKCkNwt8rlZcwYiNfRA=w960-h720">
+        </div>
+
+    </main>
+    <footer style="margin-top: auto;">
+        <p>by <a href="https://github.com/gcjong030" target="_blank">grace jong</a>, <a href="https://github.com/jasonlee44" target="_blank">jason lee</a>, <a href="https://github.com/kmiyasaki" target="_blank">kalia miyasaki</a>, & <a href="https://github.com/maiellanuqui" target="_blank">maiella nuqui</a> for IrvineHacks 2024</p>
+    </footer>
+</body>
+</html>
