@@ -1,0 +1,126 @@
+body {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F7E8CC;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+}
+
+#logo {
+    width: 60px;
+    height: 80px;
+    vertical-align: middle;
+    margin-bottom: 41px;
+
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: -30px;
+    
+}
+
+.header-child {
+    display: inline-block;
+    color: #75A7FF
+}
+
+.column {
+    float: left;
+}
+
+.left, .right {
+    width: 25%;
+}
+  
+.middle {
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#description {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.search-block {
+    text-align: center;
+}
+
+.search-bar {
+    height: 100%;
+    background: transparent;
+    border: 0;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 30px;
+}
+
+.search-button {
+    font-family: "Nanum Gothic Coding", monospace;
+    padding: 10px;
+    width: 100px;
+    background-color: #ADC5FA;
+    border: 2px;
+    border-radius: 5px;
+}
+
+.search-button:hover {
+    background-color: #75A7FF
+}
+
+.open-prompt {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color:black;
+}
+
+.error-prompt {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    color:grey;
+}
+
+input[type=text] {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+}
+
+#left-flower {
+    max-width: 120%;
+}
+
+#right-flower {
+    max-width: 120%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color:grey;
+}
+
+footer {
+    background: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
